@@ -1,11 +1,12 @@
 *,
 *::after,
 *::before {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
 
 html {
   font-size: 62.5%;
-  min-width: 300px;
   overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: auto;
@@ -15,36 +16,7 @@ body {
   box-sizing: border-box;
   font-family: bodyText;
   -webkit-font-smoothing: antialiased !important;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  font-size: 1rem;
-  line-height: 1.6;
   background-color: #fff; }
-
-.h1 {
-  font-size: 10rem;
-  line-height: 5rem; }
-
-.h2 {
-  font-size: 3rem;
-  line-height: 4rem; }
-
-.h3 {
-  font-size: 2rem;
-  line-height: 3rem; }
-
-.h4 {
-  font-size: 1.5rem;
-  line-height: 2.25rem; }
-
-.h5 {
-  font-size: 1.125rem;
-  line-height: 1.75rem; }
-
-.h6 {
-  font-size: 1rem;
-  line-height: 1.5rem; }
 
 @font-face {
   font-family: logoText;
@@ -61,7 +33,7 @@ body {
 .space-between {
   position: absolute;
   right: 18rem;
-  top: 4rem !important; }
+  top: 2.5rem !important; }
 
 .button {
   font-weight: 400;
@@ -117,7 +89,8 @@ body {
     position: relative;
     left: 0;
     background: #fff;
-    position: absolute; }
+    position: absolute;
+    z-index: 8; }
     .lang-select .select-item.active {
       display: block; }
     .lang-select .select-item .item {
@@ -252,7 +225,7 @@ header {
 
 .home-intro {
   max-width: 100%;
-  height: 65rem;
+  height: 70rem;
   position: relative;
   top: 6.3rem !important;
   background-color: #ff7535; }
@@ -269,12 +242,12 @@ header {
       float: left; }
       .home-intro__container__content .emblem {
         font-family: headText;
-        color: #3728aa; }
+        color: #3728aa;
+        font-size: 10rem; }
       .home-intro__container__content .p1 {
         text-align: left;
         width: 80%;
         position: relative;
-        top: -5rem;
         font-weight: 500;
         font-size: 1.65rem;
         letter-spacing: 0.05rem;
@@ -290,7 +263,7 @@ header {
   .home-intro__cta {
     position: relative;
     text-align: left;
-    top: -3rem !important; }
+    top: 3rem !important; }
     .home-intro__cta .p2 {
       font-size: 1.5rem;
       font-weight: bold;

@@ -1,9 +1,10 @@
 .home-intro{
     max-width: 100%;
-    height: 65rem;
+    height: 70rem;
     position: relative;
     top: 6.3rem !important;
     background-color: $primary-bg-color;
+   
     &__container{
         position: relative;
         margin: 0 10rem;
@@ -18,13 +19,13 @@
             .emblem{
                 font-family: headText;
                 color: $primary-color;
+                font-size: 10rem;
             }
 
             .p1{
                 text-align: left;
                 width: 80%;
                 position: relative;
-                top: -5rem;
                 font-weight: 500;
                 font-size: 1.65rem;
                 letter-spacing: 0.05rem;
@@ -51,7 +52,7 @@
     &__cta{
         position: relative;
         text-align: left;
-        top: -3rem !important;
+        top: 3rem !important;
         .p2{
             font-size: 1.5rem;
             font-weight: bold;

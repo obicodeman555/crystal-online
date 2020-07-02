@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "index-page-sass" : "node-sass sass/main.scss css/index.css -w"
+    "index-page-sass" : "node-sass sass/main.scss css/landing-page.css -w"
   },
   "keywords": [],
   "author": "",
