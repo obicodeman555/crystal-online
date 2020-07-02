@@ -17,9 +17,12 @@
             float: left;
 
             .emblem{
-                font-family: headText;
-                color: $primary-color;
-                font-size: 10rem;
+                h1{
+                    font-family: headText;
+                    color: $primary-color;
+                    font-size: 8.5rem;
+                    margin-top: 2rem;
+                }
             }
 
             .p1{
@@ -30,6 +33,7 @@
                 font-size: 1.65rem;
                 letter-spacing: 0.05rem;
                 color: $color-woodsmoke;
+                word-spacing: 0.5rem;
             }
         }
 
@@ -39,10 +43,11 @@
 
         .float-right{
             float: right;
-            margin-top: 7rem;
+            margin-top: 6rem;
+
             .intro-image{
-                width: 57.5rem;
-                height: 50rem
+                width: 55rem;
+                height: 45.5rem
             }
         }
 

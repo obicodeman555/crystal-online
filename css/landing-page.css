@@ -240,10 +240,11 @@ header {
     .home-intro__container__content {
       width: 50%;
       float: left; }
-      .home-intro__container__content .emblem {
+      .home-intro__container__content .emblem h1 {
         font-family: headText;
         color: #3728aa;
-        font-size: 10rem; }
+        font-size: 8.5rem;
+        margin-top: 2rem; }
       .home-intro__container__content .p1 {
         text-align: left;
         width: 80%;
@@ -251,15 +252,16 @@ header {
         font-weight: 500;
         font-size: 1.65rem;
         letter-spacing: 0.05rem;
-        color: #2b3230; }
+        color: #2b3230;
+        word-spacing: 0.5rem; }
     .home-intro__container:not(:last-child) {
       margin-right: 1rem; }
     .home-intro__container .float-right {
       float: right;
-      margin-top: 7rem; }
+      margin-top: 6rem; }
       .home-intro__container .float-right .intro-image {
-        width: 57.5rem;
-        height: 50rem; }
+        width: 55rem;
+        height: 45.5rem; }
   .home-intro__cta {
     position: relative;
     text-align: left;
