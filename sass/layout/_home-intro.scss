@@ -1,0 +1,65 @@
+.home-intro{
+    max-width: 100%;
+    height: 65rem;
+    position: relative;
+    top: 6.3rem !important;
+    background-color: $primary-bg-color;
+    &__container{
+        position: relative;
+        margin: 0 10rem;
+        padding: 0.1rem;
+
+        @include clearfix;
+
+        &__content{
+            width: 50%;
+            float: left;
+
+            .emblem{
+                font-family: headText;
+                color: $primary-color;
+            }
+
+            .p1{
+                text-align: left;
+                width: 80%;
+                position: relative;
+                top: -5rem;
+                font-weight: 500;
+                font-size: 1.65rem;
+                letter-spacing: 0.05rem;
+                color: $color-woodsmoke;
+            }
+        }
+
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+
+        .float-right{
+            float: right;
+            margin-top: 7rem;
+            .intro-image{
+                width: 57.5rem;
+                height: 50rem
+            }
+        }
+
+        
+    }
+
+    &__cta{
+        position: relative;
+        text-align: left;
+        top: -3rem !important;
+        .p2{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $color-windchil;
+        }
+
+    }
+
+
+    
+}

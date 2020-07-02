@@ -1,0 +1,297 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: auto;
+  text-size-adjust: 100%; }
+
+body {
+  box-sizing: border-box;
+  font-family: bodyText;
+  -webkit-font-smoothing: antialiased !important;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff; }
+
+.h1 {
+  font-size: 10rem;
+  line-height: 5rem; }
+
+.h2 {
+  font-size: 3rem;
+  line-height: 4rem; }
+
+.h3 {
+  font-size: 2rem;
+  line-height: 3rem; }
+
+.h4 {
+  font-size: 1.5rem;
+  line-height: 2.25rem; }
+
+.h5 {
+  font-size: 1.125rem;
+  line-height: 1.75rem; }
+
+.h6 {
+  font-size: 1rem;
+  line-height: 1.5rem; }
+
+@font-face {
+  font-family: logoText;
+  src: url(../../fonts/Lobster-Regular.ttf); }
+
+@font-face {
+  font-family: bodyText;
+  src: url(../../fonts/Poppins-Medium.ttf); }
+
+@font-face {
+  font-family: headText;
+  src: url(../../fonts/NotoSansTC-Regular.otf); }
+
+.space-between {
+  position: absolute;
+  right: 18rem;
+  top: 4rem !important; }
+
+.button {
+  font-weight: 400;
+  font-family: inherit;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.625rem 1.25rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  cursor: pointer; }
+  .button:focus {
+    outline: none; }
+  .button-shade {
+    background: #3728aa;
+    color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px #3728aa; }
+    .button-shade:hover {
+      box-shadow: none;
+      transition: box-shadow .3s ease-in-out; }
+
+.whatsapp-icon {
+  position: fixed;
+  z-index: 10;
+  right: 0.8rem;
+  top: 40rem; }
+  .whatsapp-icon__link {
+    text-align: right;
+    padding: 1.5rem; }
+    .whatsapp-icon__link img {
+      box-shadow: 0 7px 5px rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+      width: 3.5rem;
+      transition: ease-in-out .3s;
+      background-color: #fff !important; }
+      .whatsapp-icon__link img:hover {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); }
+
+.lang-select {
+  position: relative; }
+  .lang-select .select-item {
+    display: none;
+    margin-top: 10px;
+    padding-left: 0;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    max-width: 50%;
+    width: 35%;
+    position: relative;
+    left: 0;
+    background: #fff;
+    position: absolute; }
+    .lang-select .select-item.active {
+      display: block; }
+    .lang-select .select-item .item {
+      list-style: none;
+      padding: 10px 15px;
+      cursor: pointer; }
+      .lang-select .select-item .item:not(:last-child) {
+        border-bottom: 1px solid rgba(55, 40, 170, 0.5); }
+      .lang-select .select-item .item:hover {
+        background-color: rgba(55, 40, 170, 0.2); }
+      .lang-select .select-item .item a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: #171919;
+        letter-spacing: 0.07rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .lang-select .select-item .item a .lang {
+          margin-left: 1rem; }
+        .lang-select .select-item .item a .flag {
+          border-radius: 50%;
+          width: 3rem; }
+  .lang-select .icon-right {
+    position: absolute;
+    top: 1.2rem;
+    right: 38rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3728aa;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: transform ease-in-out .2s;
+    cursor: pointer;
+    font-size: 1.5rem; }
+    .lang-select .icon-right.active {
+      transform: rotate(180deg);
+      transition: transform ease-in-out .2s; }
+  .lang-select .input-field {
+    display: block;
+    max-width: 100%;
+    width: 35%;
+    padding: 2rem .75rem;
+    font-size: 1rem;
+    color: #171717;
+    background-color: #f8f8f8;
+    background-clip: padding-box;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.08); }
+    .lang-select .input-field:focus {
+      outline: none;
+      border-color: rgba(0, 0, 0, 0.27);
+      background-color: #f8f8f8;
+      transition: border-color .15s ease-in-out; }
+    .lang-select .input-field::-moz-placeholder {
+      color: rgba(29, 28, 28, 0.3); }
+
+.container {
+  max-width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: relative; }
+
+header {
+  min-width: 100%;
+  background-color: #ff7535;
+  height: 75px;
+  position: fixed;
+  z-index: 9;
+  top: 0; }
+  header nav {
+    margin: 0 10rem;
+    max-width: 100%; }
+    header nav .nav-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      header nav .nav-content .content-left,
+      header nav .nav-content .content-right {
+        margin: 1.5rem 0; }
+      header nav .nav-content .content-left {
+        max-width: 35rem;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 0; }
+        header nav .nav-content .content-left__logo-text {
+          font-size: 2.5rem;
+          font-family: logoText;
+          font-weight: bold;
+          letter-spacing: 0.25rem; }
+          header nav .nav-content .content-left__logo-text:not(:first-child) {
+            background-image: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent; }
+          header nav .nav-content .content-left__logo-text span.text-black {
+            color: #1c1c1c; }
+        header nav .nav-content .content-left__logo-image {
+          height: 30px;
+          position: relative;
+          left: 0.5rem;
+          top: 0.4rem; }
+      header nav .nav-content .content-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        header nav .nav-content .content-right .col-1-of-2:not(:nth-last-child(1)) {
+          margin-right: 2.5rem; }
+        header nav .nav-content .content-right [class^="col-"] {
+          font-size: 1.3rem; }
+          header nav .nav-content .content-right [class^="col-"] a {
+            text-decoration: none;
+            border: 1px solid #1f1c3d;
+            padding: 1rem 2.5rem;
+            text-align: center;
+            color: #201d47;
+            border-radius: 4px; }
+            header nav .nav-content .content-right [class^="col-"] a:hover {
+              border: none;
+              background-color: #fff;
+              color: #201d47; }
+        header nav .nav-content .content-right a.active {
+          background-color: #3728aa;
+          border: none;
+          color: #fff; }
+
+.home-intro {
+  max-width: 100%;
+  height: 65rem;
+  position: relative;
+  top: 6.3rem !important;
+  background-color: #ff7535; }
+  .home-intro__container {
+    position: relative;
+    margin: 0 10rem;
+    padding: 0.1rem; }
+    .home-intro__container::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .home-intro__container__content {
+      width: 50%;
+      float: left; }
+      .home-intro__container__content .emblem {
+        font-family: headText;
+        color: #3728aa; }
+      .home-intro__container__content .p1 {
+        text-align: left;
+        width: 80%;
+        position: relative;
+        top: -5rem;
+        font-weight: 500;
+        font-size: 1.65rem;
+        letter-spacing: 0.05rem;
+        color: #2b3230; }
+    .home-intro__container:not(:last-child) {
+      margin-right: 1rem; }
+    .home-intro__container .float-right {
+      float: right;
+      margin-top: 7rem; }
+      .home-intro__container .float-right .intro-image {
+        width: 57.5rem;
+        height: 50rem; }
+  .home-intro__cta {
+    position: relative;
+    text-align: left;
+    top: -3rem !important; }
+    .home-intro__cta .p2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #232323; }

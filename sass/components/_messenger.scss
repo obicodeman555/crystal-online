@@ -1,0 +1,24 @@
+.whatsapp-icon{
+    position: fixed;
+    z-index: 10;
+    right: 0.8rem;
+    top: 40rem;
+
+    &__link{
+        text-align: right;
+        padding: 1.5rem;
+       
+        img{
+            box-shadow: 0 7px 5px rgba(0,0,0,0.4);
+            border-radius: 50%;
+            width: 3.5rem;
+            transition: ease-in-out .3s;
+            background-color: $color-white !important;
+            &:hover{
+                box-shadow: 0  3px 5px rgba(0,0,0,0.2);
+            }
+        }
+
+      
+    }
+}
