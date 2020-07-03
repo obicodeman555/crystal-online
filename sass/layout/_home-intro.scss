@@ -1,13 +1,14 @@
 .home-intro{
     max-width: 100%;
-    height: 70rem;
+    height: 560px;
     position: relative;
     top: 6.3rem !important;
     background-color: $primary-bg-color;
-   
+    padding-block-end: 5rem;
+
     &__container{
         position: relative;
-        margin: 0 10rem;
+        @include container-margin;
         padding: 0.1rem;
 
         @include clearfix;
@@ -17,16 +18,26 @@
             float: left;
 
             .emblem{
-                h1{
+                &__title--1{
+                    
                     font-family: headText;
                     color: $primary-color;
                     font-size: 8.5rem;
-                    margin-top: 2rem;
+                    line-height: 2.5;
                 }
+
+                &__title--2{
+                    
+                    font-family: headText;
+                    color: $primary-color;
+                    font-size: 7rem;
+                    line-height: 0.5;
+                }
+
             }
 
             .p1{
-                text-align: left;
+                text-align: justify;
                 width: 80%;
                 position: relative;
                 font-weight: 500;
@@ -34,6 +45,7 @@
                 letter-spacing: 0.05rem;
                 color: $color-woodsmoke;
                 word-spacing: 0.5rem;
+                margin-top: 4.5rem !important;
             }
         }
 
@@ -58,6 +70,7 @@
         position: relative;
         text-align: left;
         top: 3rem !important;
+        
         .p2{
             font-size: 1.5rem;
             font-weight: bold;

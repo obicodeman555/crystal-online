@@ -3,4 +3,10 @@
     height: 100vh;
     background-color: $color-white;
     position: relative;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    
+    @include display-flex; //mixin
+    
 }

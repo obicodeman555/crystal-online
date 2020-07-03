@@ -30,6 +30,10 @@ body {
   font-family: headText;
   src: url(../../fonts/NotoSansTC-Regular.otf); }
 
+@font-face {
+  font-family: mija;
+  src: url(../../fonts/mija.ttf); }
+
 .space-between {
   position: absolute;
   right: 18rem;
@@ -72,7 +76,7 @@ body {
       border-radius: 50%;
       width: 3.5rem;
       transition: ease-in-out .3s;
-      background-color: #fff !important; }
+      background-color: #eee !important; }
       .whatsapp-icon__link img:hover {
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); }
 
@@ -82,7 +86,7 @@ body {
     display: none;
     margin-top: 10px;
     padding-left: 0;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
     border-radius: 3px;
     max-width: 50%;
     width: 35%;
@@ -156,7 +160,16 @@ body {
   max-width: 100%;
   height: 100vh;
   background-color: #fff;
-  position: relative; }
+  position: relative;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex; }
 
 header {
   min-width: 100%;
@@ -164,7 +177,8 @@ header {
   height: 75px;
   position: fixed;
   z-index: 9;
-  top: 0; }
+  position: fixed;
+  inset: 0 0 0 0; }
   header nav {
     margin: 0 10rem;
     max-width: 100%; }
@@ -225,10 +239,11 @@ header {
 
 .home-intro {
   max-width: 100%;
-  height: 70rem;
+  height: 560px;
   position: relative;
   top: 6.3rem !important;
-  background-color: #ff7535; }
+  background-color: #ff7535;
+  padding-block-end: 5rem; }
   .home-intro__container {
     position: relative;
     margin: 0 10rem;
@@ -240,20 +255,26 @@ header {
     .home-intro__container__content {
       width: 50%;
       float: left; }
-      .home-intro__container__content .emblem h1 {
+      .home-intro__container__content .emblem__title--1 {
         font-family: headText;
         color: #3728aa;
         font-size: 8.5rem;
-        margin-top: 2rem; }
+        line-height: 2.5; }
+      .home-intro__container__content .emblem__title--2 {
+        font-family: headText;
+        color: #3728aa;
+        font-size: 7rem;
+        line-height: 0.5; }
       .home-intro__container__content .p1 {
-        text-align: left;
+        text-align: justify;
         width: 80%;
         position: relative;
         font-weight: 500;
         font-size: 1.65rem;
         letter-spacing: 0.05rem;
         color: #2b3230;
-        word-spacing: 0.5rem; }
+        word-spacing: 0.5rem;
+        margin-top: 4.5rem !important; }
     .home-intro__container:not(:last-child) {
       margin-right: 1rem; }
     .home-intro__container .float-right {
@@ -270,3 +291,65 @@ header {
       font-size: 1.5rem;
       font-weight: bold;
       color: #232323; }
+
+.value-proposition {
+  width: 100%;
+  height: 585px;
+  border-top: 3px solid rgba(0, 0, 0, 0.8);
+  margin-block-start: 6.3rem;
+  background-color: #e8ddfb; }
+  .value-proposition__container .top__content {
+    padding-block-start: 5rem;
+    padding-block-end: 5rem; }
+    .value-proposition__container .top__content--header {
+      text-align: center; }
+      .value-proposition__container .top__content--header .section-title {
+        font-family: mija;
+        font-weight: 700;
+        font-size: 6rem;
+        margin-block-end: 2.5rem;
+        color: #3728aa; }
+      .value-proposition__container .top__content--header .value-proposition-intro {
+        padding-inline-start: 25rem;
+        padding-inline-end: 25rem;
+        font-size: 1.5em;
+        font-weight: 200;
+        color: #3728aa;
+        letter-spacing: 0.08rem;
+        word-spacing: 0.08rem; }
+  .value-proposition__container .lower__content {
+    max-width: 100%;
+    max-height: 100%; }
+    .value-proposition__container .lower__content .row {
+      padding: 0 8rem 6rem;
+      display: grid;
+      grid-template-columns: auto auto auto auto; }
+      .value-proposition__container .lower__content .row .organization_item:not(:first-child) {
+        margin-left: 3rem; }
+      .value-proposition__container .lower__content .row .title {
+        font-size: 1.85rem;
+        font-family: mija;
+        font-weight: bold;
+        color: #3728aa;
+        margin-block-end: 1.5rem;
+        margin-block-start: 1.5rem;
+        text-align: center; }
+      .value-proposition__container .lower__content .row .title-body {
+        font-size: 1.15rem;
+        font-weight: 400;
+        color: #363636;
+        text-align: justify;
+        letter-spacing: 0.08rem;
+        margin: 0 2rem; }
+      .value-proposition__container .lower__content .row .item_img {
+        width: 50%;
+        display: flex;
+        margin: auto; }
+        .value-proposition__container .lower__content .row .item_img img {
+          padding-inline-start: 1rem;
+          padding-inline-end: 1rem;
+          padding-block-start: 1rem;
+          padding-block-end: 1rem;
+          border-radius: 5%;
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+          width: 9.5rem; }
