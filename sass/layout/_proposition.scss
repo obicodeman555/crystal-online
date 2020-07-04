@@ -1,6 +1,6 @@
 
 .value-proposition{
-    width: 100%;
+    max-width: 100%;
     height: $layout-height;
     border-top: 3px solid rgba(0,0,0,0.8);
     margin-block-start: 6.3rem;
@@ -58,15 +58,18 @@
                      margin-block-end: 1.5rem;
                      margin-block-start: 1.5rem;
                      text-align: center;
+                     letter-spacing: 0.15rem;
                  }
 
                  .title-body{
-                     font-size: 1.15rem;
-                     font-weight: 400;
+                     font-size: 1.25rem;
+                     font-weight: 500;
                      color: #363636;
                      text-align: justify;
                      letter-spacing: 0.08rem;
                      margin: 0 2rem;
+                     font-family: "Century Gothic";
+                     line-height: 1.5;
                  }
                 .item_img{
                    width: 50%;

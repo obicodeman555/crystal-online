@@ -18,6 +18,9 @@ body {
   -webkit-font-smoothing: antialiased !important;
   background-color: #fff; }
 
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block; }
+
 @font-face {
   font-family: logoText;
   src: url(../../fonts/Lobster-Regular.ttf); }
@@ -67,14 +70,14 @@ body {
   position: fixed;
   z-index: 10;
   right: 0.8rem;
-  top: 40rem; }
+  top: 55rem; }
   .whatsapp-icon__link {
     text-align: right;
     padding: 1.5rem; }
     .whatsapp-icon__link img {
-      box-shadow: 0 7px 5px rgba(0, 0, 0, 0.4);
-      border-radius: 50%;
-      width: 3.5rem;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
+      border-radius: 15%;
+      width: 4rem;
       transition: ease-in-out .3s;
       background-color: #eee !important; }
       .whatsapp-icon__link img:hover {
@@ -238,7 +241,7 @@ header {
           color: #fff; }
 
 .home-intro {
-  max-width: 100%;
+  max-width: 100vw;
   height: 560px;
   position: relative;
   top: 6.3rem !important;
@@ -293,7 +296,7 @@ header {
       color: #232323; }
 
 .value-proposition {
-  width: 100%;
+  max-width: 100%;
   height: 585px;
   border-top: 3px solid rgba(0, 0, 0, 0.8);
   margin-block-start: 6.3rem;
@@ -333,14 +336,17 @@ header {
         color: #3728aa;
         margin-block-end: 1.5rem;
         margin-block-start: 1.5rem;
-        text-align: center; }
+        text-align: center;
+        letter-spacing: 0.15rem; }
       .value-proposition__container .lower__content .row .title-body {
-        font-size: 1.15rem;
-        font-weight: 400;
+        font-size: 1.25rem;
+        font-weight: 500;
         color: #363636;
         text-align: justify;
         letter-spacing: 0.08rem;
-        margin: 0 2rem; }
+        margin: 0 2rem;
+        font-family: "Century Gothic";
+        line-height: 1.5; }
       .value-proposition__container .lower__content .row .item_img {
         width: 50%;
         display: flex;
@@ -353,3 +359,24 @@ header {
           border-radius: 5%;
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
           width: 9.5rem; }
+
+.reviews {
+  max-width: 100%;
+  height: 585px;
+  position: relative; }
+  .reviews .review-section-container {
+    margin-block-start: 0 !important;
+    border-top: 3px solid rgba(0, 0, 0, 0.8); }
+    .reviews .review-section-container .review_heading h2 {
+      font-size: 3.5rem;
+      font-weight: 600;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-family: mija;
+      color: #3728aa; }
+    .reviews .review-section-container .review_heading.text-center {
+      text-align: center !important; }
+    .reviews .review-section-container .review_heading.mb20 {
+      margin-bottom: 20px; }
