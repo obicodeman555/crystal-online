@@ -37,6 +37,10 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
   font-family: mija;
   src: url(../../fonts/mija.ttf); }
 
+@font-face {
+  font-family: galada;
+  src: url(../../fonts/Galada-Regular.ttf); }
+
 .space-between {
   position: absolute;
   right: 18rem;
@@ -70,7 +74,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
   position: fixed;
   z-index: 10;
   right: 0.8rem;
-  top: 55rem; }
+  top: 60rem; }
   .whatsapp-icon__link {
     text-align: right;
     padding: 1.5rem; }
@@ -158,6 +162,136 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
       transition: border-color .15s ease-in-out; }
     .lang-select .input-field::-moz-placeholder {
       color: rgba(29, 28, 28, 0.3); }
+
+.glider, .glider-contain {
+  position: relative; }
+
+.glider, .glider-track {
+  transform: translateZ(0); }
+
+.glider-contain {
+  width: 100%;
+  margin: 5rem auto; }
+
+.glider {
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none; }
+
+.glider-track {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  z-index: 1;
+  padding-block-start: 2rem;
+  padding-block-end: 2rem; }
+
+.glider__content {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  width: 300px !important;
+  height: 370px !important;
+  margin: 0 0 10rem; }
+  .glider__content:not(:first-child) {
+    margin-left: 1rem; }
+  .glider__content .five-star {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-block-start: 0.8rem; }
+  .glider__content blockquote {
+    text-align: justify;
+    padding-inline-start: 2.5rem;
+    padding-inline-end: 2.5rem;
+    padding-block-start: 2rem;
+    font-size: 1.5rem;
+    margin-block-end: 0.5rem; }
+  .glider__content figcaption {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: galada;
+    letter-spacing: 0.07rem; }
+
+.glider.draggable {
+  user-select: none;
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.glider.draggable .glider-slide img {
+  user-select: none;
+  pointer-events: none; }
+
+.glider.drag {
+  cursor: -webkit-grabbing;
+  cursor: grabbing; }
+
+.glider-slide {
+  user-select: none;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  min-width: 150px; }
+
+.glider-slide img {
+  max-width: 100%; }
+
+.glider::-webkit-scrollbar {
+  opacity: 0;
+  height: 0; }
+
+@media (max-width: 36em) {
+  .glider::-webkit-scrollbar {
+    opacity: 1;
+    -webkit-appearance: none;
+    width: 7px;
+    height: 3px; }
+  .glider::-webkit-scrollbar-thumb {
+    opacity: 1;
+    border-radius: 99px;
+    background-color: rgba(156, 156, 156, 0.25);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.25); } }
+
+.glider-next,
+.glider-prev {
+  display: block;
+  position: absolute;
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
+  font-size: 4rem;
+  left: 2.5rem;
+  top: 85%;
+  cursor: pointer;
+  color: #000;
+  opacity: 1;
+  line-height: 1;
+  transition: opacity 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67), color 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem; }
+  .glider-next:focus, .glider-next:hover,
+  .glider-prev:focus,
+  .glider-prev:hover {
+    color: #6a4a39;
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.3); }
+  .glider-next i,
+  .glider-prev i {
+    display: block;
+    margin-block-start: 1rem; }
+  .glider-next.disabled,
+  .glider-prev.disabled {
+    opacity: .25;
+    color: #666;
+    cursor: default; }
+
+.glider-next {
+  right: 2.5rem;
+  left: auto; }
+
+.glider-hide {
+  opacity: 0; }
 
 .container {
   max-width: 100%;
@@ -364,12 +498,13 @@ header {
           width: 9.5rem; }
 
 .reviews {
-  max-width: 100%;
+  width: 100%;
   height: 585px;
-  position: relative; }
+  border-top: 3px solid rgba(0, 0, 0, 0.8); }
   .reviews .review-section-container {
     margin-block-start: 0 !important;
-    border-top: 3px solid rgba(0, 0, 0, 0.8); }
+    height: 100%;
+    position: relative; }
     .reviews .review-section-container .review_heading h2 {
       font-size: 3.5rem;
       font-weight: 600;
