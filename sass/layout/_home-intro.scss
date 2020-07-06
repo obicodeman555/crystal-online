@@ -3,7 +3,7 @@
     height: 560px;
     position: relative;
     top: 6.3rem !important;
-    background-color: $primary-bg-color;
+    background: linear-gradient(to left, $primary-bg-color, $primary-bg-color-2);
     padding-block-end: 5rem;
 
     &__container{

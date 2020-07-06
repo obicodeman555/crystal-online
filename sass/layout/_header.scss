@@ -1,6 +1,6 @@
 header{
     min-width: 100%;
-    background-color: $primary-bg-color;
+    background: linear-gradient(to left, $primary-bg-color, $primary-bg-color-2);
     height: 75px;
     position: fixed;
     z-index: 9;
@@ -59,8 +59,10 @@ header{
                 justify-content: center;
                 align-items: center;
 
-                .col-1-of-2:not(:nth-last-child(1)){
+                .col-1-of-2:not(:nth-last-child(1)) a{
                     margin-right: 2.5rem;
+                    border: 1px solid $btn-border-color;
+                    height: 100%;
                 }
 
                 [class^="col-"]{
@@ -68,16 +70,17 @@ header{
                         
                     a{
                         text-decoration: none;
-                        border: 1px solid $btn-border-color;
                         padding: 1rem 2.5rem;
                         text-align: center;
                         color: $btn-color;
                         border-radius: 4px;
+                        height: 100%;
 
                         &:hover{
-                            border: none;
+                            border: 1px solid transparent;
                             background-color: $color-white;
                             color: $btn-color;
+                            border-radius: 4px;
                         }
 
                         
@@ -86,7 +89,7 @@ header{
 
                 a.active{
                     background-color: $primary-color;
-                    border: none;
+                    border: 1px solid transparent;
                     color: $color-white;
                 }
             }
