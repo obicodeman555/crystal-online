@@ -1,6 +1,6 @@
 .reviews{
     width: 100%;
-    height: $layout-height;
+    max-height: $layout-height;
     border-top: 3px solid rgba(0,0,0,0.8);
     // position: relative;
     .review-section-container{
