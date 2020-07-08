@@ -398,7 +398,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
   height: 585px;
   position: relative;
   margin-top: 5%;
-  background-color: rgba(36, 26, 23, 0.85);
+  background-color: rgba(36, 26, 23, 0.785);
   padding-block-start: 4rem;
   padding-block-end: 4rem; }
   .main__footer--container {
@@ -450,8 +450,6 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
         .main__footer--container .row .col-lg-4 .contact__list li, .main__footer--container .row .col-lg-4 .social__list li {
           list-style: none;
           margin-block-end: 1.5rem; }
-          .main__footer--container .row .col-lg-4 .contact__list li img, .main__footer--container .row .col-lg-4 .social__list li img {
-            width: 3.5em; }
       .main__footer--container .row .col-lg-4 .contact__list--item .caption {
         display: flex;
         align-content: flex-start;
@@ -460,22 +458,25 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
           margin-block-start: auto;
           margin-block-end: auto;
           margin-inline-start: 0.3rem;
-          font-size: 1.58rem;
-          color: #fffacd;
+          font-size: 1.4rem;
+          color: #708090;
           font-family: QuickSandVF;
           letter-spacing: 0.1533rem; }
-        .main__footer--container .row .col-lg-4 .contact__list--item .caption__details {
-          padding-inline-start: 2rem;
-          padding-inline-end: 2rem; }
-          .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item {
-            display: block;
-            width: 100%;
-            font-size: 1.35rem;
-            font-family: RobotoVF;
-            font-weight: 550;
-            letter-spacing: 0.1533rem; }
-            .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item span.office-days {
-              color: #c0c0c0; }
+        .main__footer--container .row .col-lg-4 .contact__list--item .caption-image {
+          width: 2.5rem; }
+      .main__footer--container .row .col-lg-4 .contact__list--item .caption__details {
+        padding-inline-start: 2rem;
+        padding-inline-end: 2rem; }
+        .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item {
+          display: block;
+          width: 100%;
+          font-size: 1.35rem;
+          font-family: RobotoVF;
+          font-weight: 550;
+          letter-spacing: 0.1533rem;
+          margin-inline-start: 1.3rem; }
+          .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item span.office-days {
+            color: #c0c0c0; }
       .main__footer--container .row .col-lg-4 .social__list--item {
         width: 250px; }
         .main__footer--container .row .col-lg-4 .social__list--item a {
@@ -489,10 +490,10 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
           position: relative;
           padding-inline-end: 1.5rem;
           width: 100%; }
-          .main__footer--container .row .col-lg-4 .social__list--item a img {
+          .main__footer--container .row .col-lg-4 .social__list--item a img.social-image {
             box-shadow: 0 3px 3px rgba(36, 26, 23, 0.35);
             border-radius: 25%;
-            width: 4rem; }
+            width: 2.955rem; }
           .main__footer--container .row .col-lg-4 .social__list--item a span {
             margin-inline-start: 1rem;
             margin-block-start: auto;

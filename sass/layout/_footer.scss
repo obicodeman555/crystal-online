@@ -4,13 +4,14 @@
     height: $layout-height;
     position: relative;
     margin-top: 5%;
-    background-color: rgba($color-black-2, 0.85);
+    background-color: rgba($color-black-2, 0.785);
     padding-block-start: 4rem;
     padding-block-end: 4rem;
     
     &--container{
         height: 100%;
         max-width: 100%;
+        
         .row{
             margin: 0 10rem ;
             height: 100%;
@@ -68,12 +69,8 @@
                     li{
                         list-style: none;
                         margin-block-end: 1.5rem;
-
-                        img{
-                            width: 3.5em;
-                        }
                     }                
-                 }
+                }
 
                  .contact__list{
                      &--item{
@@ -81,38 +78,46 @@
                              display: flex;
                              align-content: flex-start;
                              margin-block-end: 1rem;
-
+                         
+                            
                              .header-5{
                                  margin-block-start: auto;
                                  margin-block-end: auto;
                                  margin-inline-start: 0.3rem;
-                                 font-size: 1.58rem;
-                                 color: $lemonchiffon;
-                                 font-family: QuickSandVF;
+                                 font-size: 1.4rem;
+                                 color: #708090;
+                                font-family: QuickSandVF;
                                  letter-spacing: 0.1533rem;
                              }
 
-                             &__details{
-                                    padding-inline-start: 2rem;
-                                    padding-inline-end: 2rem;
-                                 &--item{
+                             &-image{
+                                 width: 2.5rem;
+                             }
+                        }
+
+
+                             .caption__details{
+                                padding-inline-start: 2rem;
+                                padding-inline-end: 2rem;
+
+                                &--item{
                                     display: block;
                                     width: 100%;
                                     font-size: 1.35rem;
                                     font-family: RobotoVF;
                                     font-weight: 550;
                                     letter-spacing: 0.1533rem;
-
+                                    margin-inline-start: 1.3rem;
+                                    
                                     span.office-days{
                                         color: $silver;
                                     }
                                  }
-                             }
-                         }
+                            } 
 
+                        }
+                    }
 
-                     }
-                 }
 
                  .social__list{
                 
@@ -130,10 +135,10 @@
                             padding-inline-end: 1.5rem;
                             width: 100%;
                             
-                             img{
+                             img.social-image{
                                  box-shadow: 0 3px 3px rgba($color-black-2, 0.35);
                                  border-radius: 25%;
-                                 width: 4rem;
+                                 width: 2.955rem;
                                 }
 
                             span{
@@ -172,12 +177,11 @@
                          }
                      }
                  }
-            
-        }
         
-    }
+            
+            }
 
-    
-  }
+        }
+    }
 
 }
