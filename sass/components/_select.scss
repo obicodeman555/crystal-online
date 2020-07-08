@@ -79,13 +79,13 @@
       }
     }
 
-    .input-field {
+    #input-field {
       display: block;
       max-width: 100%;
       width: 35%;
       // height: 40px;
       padding: 2rem .75rem;
-      font-size: 1rem;
+      font-size: 1.5rem;
       color: #171717;
       background-color: rgb(248, 248, 248);
       background-clip: padding-box;
@@ -101,7 +101,12 @@
     
       &::-moz-placeholder {
         color: rgba(29, 28, 28, 0.3);
+        font-size: 1.2rem;
       }
+
+      &::-webkit-input-placeholder {
+        color: $color-black-2; 
+        font-size: 1.2rem;}
     }
     
 }

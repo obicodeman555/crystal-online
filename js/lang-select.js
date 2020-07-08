@@ -2,7 +2,7 @@ const selectItems = document.querySelectorAll('.lang-select');
 const langSelect = () => {
 
     selectItems.forEach(selectItem => {
-    const inputField = selectItem.querySelector('.input-field');
+    const inputField = selectItem.querySelector('#input-field');
     const icon = selectItem.querySelector('.icon-right');
     const ul = selectItem.querySelector('.select-item');
 

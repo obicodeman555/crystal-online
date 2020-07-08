@@ -1,0 +1,183 @@
+.main__footer{
+    max-width: 100%;
+    width: 100%;
+    height: $layout-height;
+    position: relative;
+    margin-top: 5%;
+    background-color: rgba($color-black-2, 0.85);
+    padding-block-start: 4rem;
+    padding-block-end: 4rem;
+    
+    &--container{
+        height: 100%;
+        max-width: 100%;
+        .row{
+            margin: 0 10rem ;
+            height: 100%;
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-content: center;
+
+            .col-lg-4 {
+                &:not(:first-child){
+                    margin-inline-start: 10rem;
+                }
+    
+                .header-3{
+                    margin-inline-start: 1.5rem;
+                    margin-block-end: 3.5rem;
+                    letter-spacing: 0.15rem;
+                    word-spacing: 0.2rem;
+                    font-size: 1.5rem;
+                    color: $lemonchiffon;
+                    font-family: TitilliumWeb;
+                    position: relative;
+                    display: inline-block;
+                    
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        height: 10px;
+                        width: 10px;
+                        border: 2px solid;
+                        border-color: transparent transparent $color-white $color-white;
+                        top: 15px;
+                        left: -12px;
+                    }
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        height: 10px;
+                        width: 10px;
+                        border: 2px solid;
+                        border-color: $color-white $color-white transparent transparent;
+                        top: 0px;
+                        right: -12px;
+                    }
+                }
+
+                .contact__list, .social__list{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-content: flex-start;
+
+                    li{
+                        list-style: none;
+                        margin-block-end: 1.5rem;
+
+                        img{
+                            width: 3.5em;
+                        }
+                    }                
+                 }
+
+                 .contact__list{
+                     &--item{
+                         .caption{
+                             display: flex;
+                             align-content: flex-start;
+                             margin-block-end: 1rem;
+
+                             .header-5{
+                                 margin-block-start: auto;
+                                 margin-block-end: auto;
+                                 margin-inline-start: 0.3rem;
+                                 font-size: 1.58rem;
+                                 color: $lemonchiffon;
+                                 font-family: QuickSandVF;
+                                 letter-spacing: 0.1533rem;
+                             }
+
+                             &__details{
+                                    padding-inline-start: 2rem;
+                                    padding-inline-end: 2rem;
+                                 &--item{
+                                    display: block;
+                                    width: 100%;
+                                    font-size: 1.35rem;
+                                    font-family: RobotoVF;
+                                    font-weight: 550;
+                                    letter-spacing: 0.1533rem;
+
+                                    span.office-days{
+                                        color: $silver;
+                                    }
+                                 }
+                             }
+                         }
+
+
+                     }
+                 }
+
+                 .social__list{
+                
+                     &--item{
+                         width: 250px;
+                         a{
+                            display: flex;
+                            align-content: center;
+                            flex-direction: row;
+                             text-decoration: none;
+                             color: #000;
+                             font-family: RobotoVF;
+                             font-size: 1.3rem;
+                             position: relative;
+                            padding-inline-end: 1.5rem;
+                            width: 100%;
+                            
+                             img{
+                                 box-shadow: 0 3px 3px rgba($color-black-2, 0.35);
+                                 border-radius: 25%;
+                                 width: 4rem;
+                                }
+
+                            span{
+                                margin-inline-start: 1rem;
+                                margin-block-start: auto;
+                                margin-block-end: auto;
+                                text-align: center;
+                                width: 75%;
+                            }
+
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                background-color: $lemonchiffon;
+                                width: 0%;
+                                height: 1px;
+                                bottom: 0;
+                                left: 5rem;
+                                right: 0;
+                                transition-property: width, background-color;
+                                transition-duration: .4s;
+                                transition-timing-function: ease-in-out;
+                                -webkit-transition-property: width, background-color;
+                                -webkit-transition-duration: .4s;
+                                -webkit-transition-timing-function: ease-in-out;
+                            }
+
+                            &:hover::before{
+                                width: 70%;
+                            }
+
+                            &:hover{
+                                color: $grey;
+                            }
+
+                         }
+                     }
+                 }
+            
+        }
+        
+    }
+
+    
+  }
+
+}

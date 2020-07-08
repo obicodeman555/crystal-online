@@ -6,6 +6,9 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/btn-footer";
+@import "components/forms";
+@import "components/footer-form";
 @import "components/messenger";
 @import "components/select";
 // @import "components/top-pink-border";
@@ -14,6 +17,8 @@
 
 
 @import "layout/container";
+@import "layout/footer";
+@import "layout/footer-bottom";
 @import "layout/header";
 @import "layout/home-intro";
 @import "layout/proposition";
