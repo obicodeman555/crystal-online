@@ -398,7 +398,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
   height: 585px;
   position: relative;
   margin-top: 5%;
-  background-color: rgba(36, 26, 23, 0.785);
+  background-color: rgba(36, 26, 23, 0.885);
   padding-block-start: 4rem;
   padding-block-end: 4rem; }
   .main__footer--container {
@@ -458,8 +458,8 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
           margin-block-start: auto;
           margin-block-end: auto;
           margin-inline-start: 0.3rem;
-          font-size: 1.4rem;
-          color: #708090;
+          font-size: 1.5rem;
+          color: #141301;
           font-family: QuickSandVF;
           letter-spacing: 0.1533rem; }
         .main__footer--container .row .col-lg-4 .contact__list--item .caption-image {
@@ -468,15 +468,21 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
         padding-inline-start: 2rem;
         padding-inline-end: 2rem; }
         .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item {
-          display: block;
+          display: grid;
+          grid-template-rows: repeat(3, 50%);
           width: 100%;
           font-size: 1.35rem;
           font-family: RobotoVF;
           font-weight: 550;
           letter-spacing: 0.1533rem;
-          margin-inline-start: 1.3rem; }
-          .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item span.office-days {
+          margin-inline-start: 1.3rem;
+          margin-block-end: 1.3rem; }
+          .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item span.office-days, .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item .contact-title {
             color: #c0c0c0; }
+          .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item span.office-days, .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item span.office-time, .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item .contact-title {
+            margin-block-end: 0.5rem; }
+          .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item span.office-number, .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item span.office-addr, .main__footer--container .row .col-lg-4 .contact__list--item .caption__details--item span.office-time {
+            color: #E5E7E6; }
       .main__footer--container .row .col-lg-4 .social__list--item {
         width: 250px; }
         .main__footer--container .row .col-lg-4 .social__list--item a {
@@ -484,7 +490,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
           align-content: center;
           flex-direction: row;
           text-decoration: none;
-          color: #000;
+          color: #8F8D87;
           font-family: RobotoVF;
           font-size: 1.3rem;
           position: relative;
@@ -516,9 +522,10 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
             -webkit-transition-duration: .4s;
             -webkit-transition-timing-function: ease-in-out; }
           .main__footer--container .row .col-lg-4 .social__list--item a:hover::before {
-            width: 70%; }
+            width: 60%; }
           .main__footer--container .row .col-lg-4 .social__list--item a:hover {
-            color: #808080; }
+            color: #141301;
+            font-weight: bold; }
 
 .footer-bottom {
   max-width: 100%;
